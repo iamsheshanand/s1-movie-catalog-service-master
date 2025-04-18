@@ -34,13 +34,12 @@ spec:
         version: "1.0"
         serving: "true"
         visualize: "true"
-      #annotations:
+        #annotations:
         #visualizer/uses: helloworld-service,guestbook-service,redis
     spec:
       containers:
       - name: s1-movie-catalog-service
-        image: tsrana1/s1-movie-catalog-service:v5 
-        
+        image: iamsheshanandjha/s1-movie-catalog-service:latest
         ports:
         - name: http
           containerPort: 8081
